@@ -2,6 +2,7 @@ module.exports = {
   author: "David Le",
   siteDescription: "Vietnamese software engineer based in Europe",
   siteUrl: "davidle123456789.com",
+  siteTitle: "DAVID LE PORTFOLIO",
   siteLanguage: "en_US",
   siteIcon: "content/favicon.png",
   seoTitleSuffix: "Portfolio",
@@ -11,12 +12,11 @@ module.exports = {
   socialMedia: [
     {
       name: "Linkedin",
-      url: "https://github.com/davele-itsme",
+      url: "https://www.linkedin.com/in/dave-le/",
     },
     {
       name: "Github",
-      url:
-        "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal",
+      url: "https://github.com/davele-itsme",
     },
     {
       name: "E-mail",
@@ -27,7 +27,7 @@ module.exports = {
   navLinks: {
     menu: [
       {
-        name: "Home3",
+        name: "Home",
         url: "/",
       },
       {

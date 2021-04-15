@@ -2,13 +2,14 @@ const {
   author,
   siteDescription,
   siteIcon,
+  siteTitle,
   googleAnalyticsTrackingId,
 } = require(`./config`)
 
 module.exports = {
   siteMetadata: {
     author: author,
-    title: author,
+    title: siteTitle,
     description: siteDescription,
   },
   plugins: [
@@ -37,5 +38,19 @@ module.exports = {
     },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1000,
+            },
+          },
+        ],
+      },
+    },
   ],
 }
