@@ -1,22 +1,11 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import NavigationBar from "./navbar"
 
 const Header = ({ author }) => (
   <header>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1>
-        <Link to="/" style={{ textDecoration: "none" }}>
-          {author}
-        </Link>
-      </h1>
-    </div>
+    <NavigationBar author={author}></NavigationBar>
   </header>
 )
 

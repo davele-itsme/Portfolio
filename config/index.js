@@ -1,7 +1,7 @@
 module.exports = {
   author: "David Le",
   siteDescription: "Vietnamese software engineer based in Europe",
-  siteUrl: "davidle123456789.com",
+  siteUrl: "https://localhost:8000",
   siteTitle: "DAVID LE PORTFOLIO",
   siteLanguage: "en_US",
   siteIcon: "content/favicon.png",
@@ -27,16 +27,12 @@ module.exports = {
   navLinks: {
     menu: [
       {
-        name: "Home",
-        url: "/",
-      },
-      {
-        name: "About me",
+        name: "About",
         url: "/about",
       },
       {
-        name: "Features",
-        url: "/features",
+        name: "Work",
+        url: "/work",
       },
       {
         name: "Contact",

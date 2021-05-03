@@ -10,7 +10,7 @@ const IndexPage = () => (
     <p>Curious Software Engineering Major based in Europe</p>
     <p>
       <Link to="/about/">About</Link> <br />
-      <Link to="/projects/">Projects</Link>
+      <Link to="/work/">Work</Link>
       <Link to="/contact/">Contact</Link>
     </p>
   </Layout>
