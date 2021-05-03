@@ -1,4 +1,4 @@
-import * as React from "react"
+/* import * as React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -13,4 +13,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default SecondPage */
