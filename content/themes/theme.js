@@ -1,4 +1,4 @@
-export default {
+const theme = {
   fonts: {
     main: "varela",
   },
@@ -7,3 +7,5 @@ export default {
     font: "#FFFFFF",
   },
 }
+
+export default theme
