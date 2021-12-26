@@ -20,7 +20,9 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
+// eslint-disable-next-line
 export const wrapRootElement = ({ element }) => (
+  // eslint-disable-next-line
   <ThemeProvider theme={Theme}>
     <GlobalStyle />
     {element}
