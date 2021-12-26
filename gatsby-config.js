@@ -1,10 +1,4 @@
-const {
-  author,
-  siteDescription,
-  siteIcon,
-  siteTitle,
-  googleAnalyticsTrackingId,
-} = require(`./config`)
+const { author, siteDescription, siteIcon, siteTitle } = require(`./config`);
 
 module.exports = {
   siteMetadata: {
@@ -60,4 +54,4 @@ module.exports = {
       },
     },
   ],
-}
+};

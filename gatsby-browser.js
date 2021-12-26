@@ -1,7 +1,7 @@
-import React from "react"
-import "bootstrap/dist/css/bootstrap.min.css"
-import { createGlobalStyle, ThemeProvider } from "styled-components"
-import Theme from "./content/themes/theme"
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+import Theme from "./content/themes/theme";
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -9,20 +9,20 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body, html {
-        font-family: ${props => props.theme.fonts.main};
+        font-family: ${(props) => props.theme.fonts.main};
         height: 100%;
-        background-color: ${props => props.theme.colors.background};
-        color: ${props => props.theme.colors.font};
+        background-color: ${(props) => props.theme.colors.background};
+        color: ${(props) => props.theme.colors.font};
     }
 
     a {
-        color: ${props => props.theme.colors.font};
+        color: ${(props) => props.theme.colors.font};
     }
-`
+`;
 
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider theme={Theme}>
     <GlobalStyle />
     {element}
   </ThemeProvider>
-)
+);

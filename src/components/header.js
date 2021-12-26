@@ -1,19 +1,19 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import NavigationBar from "./navbar"
+import * as React from "react";
+import PropTypes from "prop-types";
+import NavigationBar from "./navbar";
 
 const Header = ({ author }) => (
   <header>
     <NavigationBar author={author}></NavigationBar>
   </header>
-)
+);
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  author: PropTypes.string,
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+  author: "David Le",
+};
 
-export default Header
+export default Header;

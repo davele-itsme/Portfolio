@@ -1,10 +1,11 @@
-import { Link } from "gatsby"
-import React from "react"
-import { Navbar, Nav } from "react-bootstrap"
-import { navLinks } from "../../config"
+import { Link } from "gatsby";
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import { navLinks } from "../../config";
+import PropTypes from "prop-types";
 
 const NavigationBar = ({ author }) => {
-  const { menu } = navLinks
+  const { menu } = navLinks;
   return (
     <Navbar expand="lg">
       <Navbar.Brand href="/">{author}</Navbar.Brand>
@@ -18,12 +19,20 @@ const NavigationBar = ({ author }) => {
                   {name}
                 </Link>
               </Nav.Item>
-            )
+            );
           })}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  )
-}
+  );
+};
 
-export default NavigationBar
+NavigationBar.propTypes = {
+  author: PropTypes.string,
+};
+
+NavigationBar.defaultProps = {
+  author: "David Le",
+};
+
+export default NavigationBar;
