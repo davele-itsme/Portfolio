@@ -25,7 +25,9 @@
     "gatsby-source-filesystem": "^4.4.0",
     "gatsby-transformer-sharp": "^4.4.0",
     "graphql": "^15.8.0",
+    "joi": "^17.5.0",
     "jquery": "^3.6.0",
+    "npm-force-resolutions": "^0.0.10",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-bootstrap": "^2.0.4",
@@ -57,7 +59,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
   },
   "repository": {
     "type": "git",
@@ -65,5 +68,10 @@
   },
   "bugs": {
     "url": "https://github.com/davele-itsme/Portfolio/issues"
+  },
+  "resolutions": {
+    "core-js": "^3.20.1",
+    "svgo": "^2.8.0",
+    "uuid": "^8.3.2"
   }
 }

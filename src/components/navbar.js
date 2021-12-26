@@ -13,7 +13,7 @@ const NavigationBar = ({ author }) => {
         <Nav className="mr-auto" as="ul">
           {menu.map(({ name, url }, key) => {
             return (
-              <Nav.Item as="li">
+              <Nav.Item as="li" key={key}>
                 <Link to={url} className="nav-link" activeClassName="active">
                   {name}
                 </Link>
