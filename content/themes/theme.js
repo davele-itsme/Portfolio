@@ -6,6 +6,6 @@ const theme = {
     background: "#020B16",
     font: "#FFFFFF",
   },
-}
+};
 
-export default theme
+export default theme;

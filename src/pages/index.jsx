@@ -6,7 +6,7 @@ import Seo from "../components/seo";
 function IndexPage() {
   return (
     <Layout>
-      <Seo title="Home" />
+      <Seo title="David Le" />
       <h1>David Le</h1>
       <p>Curious Software Engineering Major based in Europe</p>
       <p>

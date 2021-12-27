@@ -4,7 +4,7 @@ module.exports = {
   siteUrl: "https://localhost:8000",
   siteTitle: "DAVID LE PORTFOLIO",
   siteLanguage: "en_US",
-  siteIcon: "content/favicon.png",
+  siteIcon: "static/favicon.png",
   seoTitleSuffix: "Portfolio",
   useCookieBar: false,
   googleAnalyticsTrackingId: "",
@@ -40,4 +40,4 @@ module.exports = {
       },
     ],
   },
-}
+};
