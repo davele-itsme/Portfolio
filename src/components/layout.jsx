@@ -2,7 +2,7 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import { Container } from "react-bootstrap";
-import Header from "./header";
+import Header from "./Header";
 import "../styles/layout.css";
 
 function Layout({ children }) {
