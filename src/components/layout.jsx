@@ -2,8 +2,14 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import { Container } from "react-bootstrap";
+import styled from "styled-components";
 import Header from "./Header";
 import "../styles/layout.css";
+
+const StyledMain = styled.main`
+  width: 100%;
+  height: 100vh;
+`;
 
 function Layout({ children }) {
   const data = useStaticQuery(graphql`
@@ -20,7 +26,7 @@ function Layout({ children }) {
     <>
       <Header author={data.site.siteMetadata?.author} />
       <Container>
-        <main>{children}</main>
+        <StyledMain>{children}</StyledMain>
       </Container>
     </>
   );

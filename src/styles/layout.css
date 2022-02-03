@@ -16,6 +16,13 @@ body {
   margin: 0;
 }
 
+.rowdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .burger {
   z-index: 999;
+  margin-left: 5vw;
 }

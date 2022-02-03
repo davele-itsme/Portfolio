@@ -1,11 +1,11 @@
-/* import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+import Layout from "../components/Layout";
+import SEO from "../components/Seo";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-const AboutPage = () => (
+function AboutPage() {
+  return (
     <Layout>
       <SEO title="Home" />
       <h1>Hi people</h1>
@@ -21,9 +21,10 @@ const AboutPage = () => (
       />
       <p>
         <Link to="/page-2/">Go to page 2</Link> <br />
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+        <Link to="/using-typescript/">Go to Using TypeScript</Link>
       </p>
     </Layout>
-  )
-  
-  export default AboutPage */
+  );
+}
+
+export default AboutPage;

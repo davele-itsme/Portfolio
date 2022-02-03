@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import NavMenu from "./NavMenu";
 import NavToggler from "./NavToggler";
+import { socialMedias } from "../../config";
 
 const StyledHeader = styled.header`
   width: 100vw;
@@ -24,6 +26,14 @@ const StyledLogo = styled.span`
   }
 `;
 
+const StyledDiv = styled.div`
+  &:hover {
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    color: #4a586b;
+  }
+`;
+
 function Header({ author }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -34,7 +44,20 @@ function Header({ author }) {
         <NavMenu setIsNavOpen={() => setIsNavOpen(!isNavOpen)} />
       ) : null}
 
-      <NavToggler onClick={() => setIsNavOpen(!isNavOpen)} isOpen={isNavOpen} />
+      <div className="rowdiv">
+        <a href="www.google.com" target="_blank">
+          <StyledDiv>
+            <AiFillGithub fontSize="2em" />
+          </StyledDiv>
+        </a>
+        <StyledDiv>
+          <AiFillLinkedin fontSize="2em" />
+        </StyledDiv>
+        <NavToggler
+          onClick={() => setIsNavOpen(!isNavOpen)}
+          isOpen={isNavOpen}
+        />
+      </div>
     </StyledHeader>
   );
 }

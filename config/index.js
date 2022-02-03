@@ -9,7 +9,7 @@ module.exports = {
   useCookieBar: false,
   googleAnalyticsTrackingId: "",
 
-  socialMedia: [
+  socialMedias: [
     {
       name: "Linkedin",
       url: "https://www.linkedin.com/in/dave-le/",
@@ -24,20 +24,18 @@ module.exports = {
     },
   ],
 
-  navLinks: {
-    menu: [
-      {
-        name: "About",
-        url: "/about",
-      },
-      {
-        name: "Work",
-        url: "/work",
-      },
-      {
-        name: "Contact",
-        url: "/contact",
-      },
-    ],
-  },
+  navLinks: [
+    {
+      name: "About",
+      url: "/about",
+    },
+    {
+      name: "Work",
+      url: "/work",
+    },
+    {
+      name: "Contact",
+      url: "/contact",
+    },
+  ],
 };

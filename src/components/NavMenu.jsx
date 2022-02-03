@@ -33,10 +33,9 @@ const StyledLink = styled(Link)`
 `;
 
 function NavMenu() {
-  const { menu } = navLinks;
   return (
     <StyledNavMenu>
-      {menu.map(({ name, url }) => (
+      {navLinks.map(({ name, url }) => (
         <StyledLink to={url}>{name}</StyledLink>
       ))}
     </StyledNavMenu>
