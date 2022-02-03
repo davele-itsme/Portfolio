@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import Layout from "../components/Layout";
-import Seo from "../components/Seo";
+import Layout from "../components/LayoutComponent";
+import Seo from "../components/SeoComponent";
 
 const StyledH1 = styled.h1`
   @import "../styles/typography.css";
