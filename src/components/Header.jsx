@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import NavMenu from "./NavMenu";
 import NavToggler from "./NavToggler";
-import { socialMedias } from "../../config";
 
 const StyledHeader = styled.header`
   width: 100vw;
@@ -12,6 +11,7 @@ const StyledHeader = styled.header`
   flex-direction: row;
   justify-content: space-between;
   padding: 30px;
+  height: 10vh;
 `;
 
 const StyledLogo = styled.span`

@@ -1,14 +1,13 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-import { Container } from "react-bootstrap";
 import styled from "styled-components";
 import Header from "./Header";
 import "../styles/layout.css";
 
 const StyledMain = styled.main`
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 `;
 
 function Layout({ children }) {
@@ -25,9 +24,7 @@ function Layout({ children }) {
   return (
     <>
       <Header author={data.site.siteMetadata?.author} />
-      <Container>
-        <StyledMain>{children}</StyledMain>
-      </Container>
+      <StyledMain>{children}</StyledMain>
     </>
   );
 }
