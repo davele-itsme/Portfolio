@@ -14,6 +14,11 @@ html::-webkit-scrollbar {
 
 body {
   margin: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 11, 22, 1) 0%,
+    rgba(6, 32, 65, 1) 100%
+  );
 }
 
 .animatedlogo {
@@ -24,9 +29,11 @@ body {
   content: "";
   position: absolute;
   width: 21vw;
-  height: 5px;
-  background-color: #ff0076;
+  height: 4px;
+  background-color: #ff4d5a;
   animation: line 3s alternate 1;
+  animation-fill-mode: forwards;
+  border-radius: 5px;
 }
 
 .rowdiv {
@@ -55,6 +62,12 @@ body {
   50% {
     transform: scaleX(1);
     top: 0;
+  }
+  70% {
+    transform: scaleX(0.1);
+  }
+  100% {
+    transform: scaleX(0.1);
   }
 }
 

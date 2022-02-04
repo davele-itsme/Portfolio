@@ -22,7 +22,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   font-size: clamp(3rem, 4vw, 6vw);
   font-family: Impact; Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  animation: text 2s alternate 1;
+  animation: text 1.6s alternate 1;
 
   user-select: none;
 

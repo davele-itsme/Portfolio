@@ -9,21 +9,6 @@ module.exports = {
   useCookieBar: false,
   googleAnalyticsTrackingId: "",
 
-  socialMedias: [
-    {
-      name: "Linkedin",
-      url: "https://www.linkedin.com/in/dave-le/",
-    },
-    {
-      name: "Github",
-      url: "https://github.com/davele-itsme",
-    },
-    {
-      name: "E-mail",
-      url: "mailto:ledaodavid@gmail.com",
-    },
-  ],
-
   navLinks: [
     {
       name: "About",

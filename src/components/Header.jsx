@@ -26,7 +26,7 @@ const StyledLogo = styled.span`
   }
 `;
 
-const StyledDiv = styled.div`
+const StyledA = styled.a`
   margin-right: 10px;
   &:hover {
     cursor: pointer;
@@ -46,14 +46,22 @@ function Header({ author }) {
       ) : null}
 
       <div className="rowdiv">
-        <a href="www.google.com" target="_blank">
-          <StyledDiv>
-            <AiFillGithub fontSize="2em" />
-          </StyledDiv>
-        </a>
-        <StyledDiv>
+        <StyledA
+          href="https://github.com/davele-itsme"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillGithub fontSize="2em" />
+        </StyledA>
+
+        <StyledA
+          href="https://www.linkedin.com/in/dave-le/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiFillLinkedin fontSize="2em" />
-        </StyledDiv>
+        </StyledA>
+
         <NavToggler
           onClick={() => setIsNavOpen(!isNavOpen)}
           isOpen={isNavOpen}
