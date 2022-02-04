@@ -22,12 +22,12 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   font-size: clamp(3rem, 4vw, 6vw);
   font-family: Impact; Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  transition: .2s all ease-in-out;
-  
+  animation: text 2s alternate 1;
+
   user-select: none;
 
   &:hover {
-    transition: .2s all ease-in-out;
+    transition: .3s all ease-in-out;
     color: #4a586b;
   }
 `;

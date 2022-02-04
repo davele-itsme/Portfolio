@@ -32,6 +32,7 @@
     "joi": "^17.5.0",
     "jquery": "^3.6.0",
     "npm-force-resolutions": "^0.0.10",
+    "parallax-js": "^3.1.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-bootstrap": "^2.0.4",

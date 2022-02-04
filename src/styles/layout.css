@@ -16,6 +16,19 @@ body {
   margin: 0;
 }
 
+.animatedlogo {
+  position: relative;
+}
+
+.animatedlogo:before {
+  content: "";
+  position: absolute;
+  width: 21vw;
+  height: 5px;
+  background-color: #ff0076;
+  animation: line 3s alternate 1;
+}
+
 .rowdiv {
   display: flex;
   flex-direction: row;
@@ -25,4 +38,32 @@ body {
 .burger {
   z-index: 999;
   margin-left: 5vw;
+}
+
+@keyframes line {
+  0% {
+    transform: scaleX(0);
+  }
+  15% {
+    transform: scaleX(0);
+  }
+  20%,
+  25% {
+    transform: scaleX(1);
+    top: calc(100% - 2px);
+  }
+  50% {
+    transform: scaleX(1);
+    top: 0;
+  }
+}
+
+@keyframes text {
+  0%,
+  25% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }

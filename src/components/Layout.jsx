@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
-import Header from "./HeaderComponent";
+import Header from "./Header";
 import "../styles/layout.css";
 
 const StyledMain = styled.main`

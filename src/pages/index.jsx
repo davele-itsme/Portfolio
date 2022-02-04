@@ -1,21 +1,24 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import Layout from "../components/LayoutComponent";
-import Seo from "../components/SeoComponent";
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
 
 const StyledH1 = styled.h1`
   @import "../styles/typography.css";
   font-family: "Futura", sans-serif;
-  font-size: 5em;
+  font-size: 5vw;
+  animation: text 3s alternate 1;
 `;
 
 function IndexPage() {
   return (
     <Layout>
       <Seo title="David Le" />
-      <StyledH1>DAVID</StyledH1>
-      <StyledH1>LE</StyledH1>
+      <div className="animatedlogo">
+        <StyledH1>DAVID LE</StyledH1>
+      </div>
+
       <p>Curious Software Engineering Major based in Europe</p>
       <p>
         <Link to="/about/">About</Link> <br />
