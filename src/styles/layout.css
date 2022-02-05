@@ -108,10 +108,10 @@ body {
     top: 0;
   }
   70% {
-    transform: scaleX(0.1);
+    transform: scaleX(0.5);
   }
   100% {
-    transform: scaleX(0.1);
+    transform: scaleX(0.5);
   }
 }
 

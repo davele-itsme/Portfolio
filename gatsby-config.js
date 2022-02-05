@@ -18,6 +18,9 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -73,8 +76,6 @@ module.exports = {
         },
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -87,7 +88,6 @@ module.exports = {
         icon: siteIcon,
       },
     },
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -100,6 +100,12 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `tomato`,
       },
     },
   ],

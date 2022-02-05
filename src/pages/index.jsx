@@ -26,11 +26,10 @@ const StyledH2 = styled.h2`
   font-size: 3vw;
 `;
 
-const StyledH4 = styled.h4`
+const StyledH3 = styled.h3`
   @import "../styles/typography.css";
   font-family: "Futura light", sans-serif;
-  margin-top: 20px;
-  font-size: 2vw;
+  font-size: 1.5vw;
 `;
 
 function IndexPage() {
@@ -54,7 +53,7 @@ function IndexPage() {
           <div className="animatedlogo">
             <StyledH1>DAVID LE</StyledH1>
           </div>
-          <StyledH4>software engineer</StyledH4>
+          <StyledH3>software engineer</StyledH3>
           <p>
             <Link to="/about/">About</Link> <br />
             <Link to="/work/">Work</Link> <br />
