@@ -19,11 +19,11 @@ body {
   );
 }
 
-.animatedlogo {
+.animated-logo {
   position: relative;
 }
 
-.animatedlogo:before {
+.animated-logo:before {
   content: "";
   position: absolute;
   width: 22.5vw;
@@ -34,7 +34,7 @@ body {
   border-radius: 5px;
 }
 
-.rowdiv {
+.row-div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -45,7 +45,7 @@ body {
   margin-left: 5vw;
 }
 
-#maincontent {
+#main-content {
   width: 40%;
   height: 100%;
   display: flex;
@@ -54,7 +54,7 @@ body {
   justify-content: center;
 }
 
-#mooncontent {
+#moon-content {
   position: fixed;
   top: -20vh;
   right: -10vh;
@@ -62,7 +62,7 @@ body {
   width: 140vh;
 }
 
-#moonring,
+#moon-ring,
 #stars {
   height: 140vh;
   width: 140vh;
@@ -89,6 +89,59 @@ body {
   height: fit-content;
   width: fit-content;
   color: #ff4d5a;
+}
+
+.absolute-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 1.2em;
+  font-size: 22px;
+  color: rgba(#fff, 0.5);
+  border-radius: 2em;
+  border: solid 2px;
+  transition: 0.4s;
+}
+
+.scroll-icon:hover {
+  background-color: rgba(#fff, 0.05) !important;
+  color: #ff4d5a;
+}
+
+.scroll-icon::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+@keyframes scroll-icon {
+  0% {
+    transform: translateY(-12px);
+    opacity: 0;
+  }
+  30%,
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
 }
 
 @keyframes line {

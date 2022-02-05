@@ -49,8 +49,8 @@ function IndexPage() {
     <Layout>
       <Seo title="David Le" />
       <StyledContent>
-        <div id="maincontent">
-          <div className="animatedlogo">
+        <div id="main-content">
+          <div className="animated-logo">
             <StyledH1>DAVID LE</StyledH1>
           </div>
           <StyledH3>software engineer</StyledH3>
@@ -61,12 +61,12 @@ function IndexPage() {
           </p>
         </div>
       </StyledContent>
-      <div id="mooncontent" ref={sceneEl}>
+      <div id="moon-content" ref={sceneEl}>
         <img
           src="moon-ring.png"
           alt="Moon ring"
           data-depth="0.2"
-          id="moonring"
+          id="moon-ring"
         />
         <img src="stars.png" alt="Stars" data-depth="0.1" id="stars" />
         <img src="moon.png" alt="Moon" data-depth="0.2" id="moon" />
@@ -74,6 +74,11 @@ function IndexPage() {
         <StyledH2 data-depth="0.05" id="portfolio">
           PORTFOLIO
         </StyledH2>
+      </div>
+      <div className="absolute-content">
+        <a href="#placeholder" className="scroll-icon">
+          <span />
+        </a>
       </div>
     </Layout>
   );

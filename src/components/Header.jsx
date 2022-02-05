@@ -45,7 +45,7 @@ function Header({ author }) {
         <NavMenu setIsNavOpen={() => setIsNavOpen(!isNavOpen)} />
       ) : null}
 
-      <div className="rowdiv">
+      <div className="row-div">
         <StyledA
           href="https://github.com/davele-itsme"
           target="_blank"
