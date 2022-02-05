@@ -35,7 +35,7 @@ module.exports = {
       },
     },
     {
-      resolve: `  `,
+      resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
         headers: {
           "/**/*.html": ["cache-control: public, max-age=0, must-revalidate"],
