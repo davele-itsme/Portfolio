@@ -50,7 +50,7 @@ module.exports = {
           "/**/*.js": ["cache-control: public, max-age=31536000, immutable"],
           "/**/*.css": ["cache-control: public, max-age=31536000, immutable"],
           "/*.png": ["cache-control: public, max-age=31536000, immutable"],
-          "moon.png": ["cache-control: public, max-age=31536000, immutable"],
+          "/moon.png": ["cache-control: public, max-age=31536000, immutable"],
           "/sw.js": ["cache-control: public, age=0, must-revalidate"],
         },
       },
