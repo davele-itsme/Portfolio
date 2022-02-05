@@ -17,6 +17,7 @@ const StyledH1 = styled.h1`
   font-weight: bold;
   font-size: 5vw;
   animation: text 3s alternate 1;
+  margin-block: 0.2em;
 `;
 
 const StyledH2 = styled.h2`
@@ -30,6 +31,7 @@ const StyledP = styled.p`
   @import "../styles/typography.css";
   font-family: "Futura light", sans-serif;
   font-size: 1.5vw;
+  margin: 10px;
 `;
 
 function IndexPage() {
@@ -52,6 +54,9 @@ function IndexPage() {
         <div id="main-content">
           <div className="animated-logo">
             <StyledH1>DAVID LE</StyledH1>
+            <div className="moving-area">
+              <div className="moving-line" />
+            </div>
           </div>
           <StyledP>software engineer</StyledP>
           <p>
