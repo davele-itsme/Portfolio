@@ -1,9 +1,17 @@
 @font-face {
   font-family: "Futura";
+  font-display: swap;
   src: url("../fonts/futura.ttf");
 }
 
 @font-face {
   font-family: "Futura light";
+  font-display: swap;
   src: url("../fonts/futura_light.ttf");
+}
+
+@font-face {
+  font-family: "Varela";
+  font-display: swap;
+  src: url("../fonts/varela.ttf");
 }

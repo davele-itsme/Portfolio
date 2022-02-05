@@ -1,6 +1,6 @@
 const theme = {
   fonts: {
-    main: "varela",
+    main: "Varela",
   },
   colors: {
     font: "#FFFFFF",
