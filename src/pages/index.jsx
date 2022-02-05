@@ -26,7 +26,7 @@ const StyledH2 = styled.h2`
   font-size: 3vw;
 `;
 
-const StyledH3 = styled.h3`
+const StyledP = styled.p`
   @import "../styles/typography.css";
   font-family: "Futura light", sans-serif;
   font-size: 1.5vw;
@@ -53,7 +53,7 @@ function IndexPage() {
           <div className="animated-logo">
             <StyledH1>DAVID LE</StyledH1>
           </div>
-          <StyledH3>software engineer</StyledH3>
+          <StyledP>software engineer</StyledP>
           <p>
             <Link to="/about/">About</Link> <br />
             <Link to="/work/">Work</Link> <br />
@@ -75,7 +75,7 @@ function IndexPage() {
           PORTFOLIO
         </StyledH2>
       </div>
-      <a href="#placeholder" className="scroll-icon">
+      <a href="#placeholder" aria-label="Scroll icon" className="scroll-icon">
         <span />
       </a>
     </Layout>
