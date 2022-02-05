@@ -75,11 +75,9 @@ function IndexPage() {
           PORTFOLIO
         </StyledH2>
       </div>
-      <div className="absolute-content">
-        <a href="#placeholder" className="scroll-icon">
-          <span />
-        </a>
-      </div>
+      <a href="#placeholder" className="scroll-icon">
+        <span />
+      </a>
     </Layout>
   );
 }
