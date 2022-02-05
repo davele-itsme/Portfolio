@@ -1,7 +1,7 @@
 module.exports = {
   author: "David Le",
   siteDescription: "Vietnamese software engineer based in Europe",
-  siteUrl: "https://localhost:8000",
+  siteUrl: "https://davidle.gatsbyjs.io/",
   siteTitle: "DAVID LE PORTFOLIO",
   siteLanguage: "en_US",
   siteIcon: "static/favicon.png",

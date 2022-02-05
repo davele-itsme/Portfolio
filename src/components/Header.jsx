@@ -50,6 +50,7 @@ function Header({ author }) {
           href="https://github.com/davele-itsme"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Github"
         >
           <AiFillGithub fontSize="2em" />
         </StyledA>
@@ -58,6 +59,7 @@ function Header({ author }) {
           href="https://www.linkedin.com/in/dave-le/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Linkedin"
         >
           <AiFillLinkedin fontSize="2em" />
         </StyledA>
