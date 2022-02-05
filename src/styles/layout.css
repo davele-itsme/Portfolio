@@ -115,15 +115,13 @@ body {
   height: 2em;
   width: 1.2em;
   font-size: 22px;
-  color: rgba(#fff, 0.5);
   border-radius: 2em;
-  border: solid 2px;
+  border: solid 2px #fff;
   transition: 0.4s;
 }
 
 .scroll-icon:hover {
-  background-color: rgba(#fff, 0.05) !important;
-  color: #ff4d5a;
+  border-color: #ff4d5a;
 }
 
 .scroll-icon::after {
