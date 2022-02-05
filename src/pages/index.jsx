@@ -32,6 +32,7 @@ const StyledP = styled.p`
   font-family: "Futura light", sans-serif;
   font-size: 1.5vw;
   margin: 10px;
+  animation: text 0.8s both;
 `;
 
 function IndexPage() {
@@ -59,11 +60,6 @@ function IndexPage() {
             </div>
           </div>
           <StyledP>software engineer</StyledP>
-          <p>
-            <Link to="/about/">About</Link> <br />
-            <Link to="/work/">Work</Link> <br />
-            <Link to="/contact/">Contact</Link>
-          </p>
         </div>
       </StyledContent>
       <div id="moon-content" ref={sceneEl}>

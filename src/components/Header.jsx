@@ -16,7 +16,7 @@ const StyledHeader = styled.header`
 
 const StyledLogo = styled.span`
   @import "../styles/typography.css";
-  font-family: "Futura", sans-serif;
+  font-family: "Futura light", sans-serif;
   font-size: 1.5em;
 
   &:hover {

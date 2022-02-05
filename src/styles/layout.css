@@ -85,8 +85,12 @@ body {
   width: 56vh;
 }
 
-#portfolio,
 #clouds {
+  height: 67.2vh;
+  width: auto;
+}
+
+#portfolio {
   height: fit-content;
   width: fit-content;
   color: #ff4d5a;
@@ -177,5 +181,11 @@ body {
   }
   50% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes fadeInBottom {
+  from {
+    transform: translateX(-100%);
   }
 }
