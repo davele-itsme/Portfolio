@@ -35,44 +35,22 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-gatsby-cloud`,
+      resolve: `  `,
       options: {
         headers: {
-          "/**/*.html": [
-            "cache-control: public",
-            "cache-control: max-age=0",
-            "cache-control: must-revalidate",
-          ],
+          "/**/*.html": ["cache-control: public, max-age=0, must-revalidate"],
           "/page-data/*.json": [
-            "cache-control: public",
-            "cache-control: max-age=0",
-            "cache-control: must-revalidate",
+            "cache-control: public, max-age=0, must-revalidate",
           ],
           "/app-data.json": [
-            "cache-control: public",
-            "cache-control: max-age=0",
-            "cache-control: must-revalidate",
+            "cache-control: public, max-age=0, must-revalidate",
           ],
-          "/static/*": [
-            "cache-control: public",
-            "cache-control: max-age=31536000",
-            "cache-control: immutable",
-          ],
-          "/**/*.js": [
-            "cache-control: public",
-            "cache-control: max-age=31536000",
-            "cache-control: immutable",
-          ],
-          "/**/*.css": [
-            "cache-control: public",
-            "cache-control: max-age=31536000",
-            "cache-control: immutable",
-          ],
-          "/sw.js": [
-            "cache-control: public",
-            "cache-control: max-age=0",
-            "cache-control: must-revalidate",
-          ],
+          "/static/*": ["cache-control: public,max-age=31536000,immutable"],
+          "/public/*": ["cache-control: public, max-age=31536000, immutable"],
+          "/**/*.js": ["cache-control: public, max-age=31536000, immutable"],
+          "/**/*.css": ["cache-control: public, max-age=31536000, immutable"],
+          "/**/*.png": ["cache-control: public, max-age=31536000, immutable"],
+          "/sw.js": ["cache-control: public, age=0, must-revalidate"],
         },
       },
     },
