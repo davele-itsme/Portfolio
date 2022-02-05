@@ -72,16 +72,9 @@ body {
   margin-right: auto;
 }
 
-#moon,
-#portfolio,
-#clouds {
+#moon {
   height: 56vh;
   width: 56vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto auto auto auto;
 }
 
 #portfolio,
@@ -89,6 +82,16 @@ body {
   height: fit-content;
   width: fit-content;
   color: #ff4d5a;
+}
+
+#moon,
+#portfolio,
+#clouds {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto auto auto;
 }
 
 .absolute-content {
