@@ -1,10 +1,21 @@
 @import "./typography.css";
 
+* {
+  box-sizing: border-box;
+}
+
 html {
+  font-family: "Varela", sans-serif;
+  height: 100%;
+  color: white;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+a {
+  color: white;
 }
 
 html::-webkit-scrollbar {

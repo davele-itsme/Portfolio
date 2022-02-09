@@ -28,6 +28,7 @@ const StyledLogo = styled.span`
 
 const StyledA = styled.a`
   margin-right: 10px;
+  color: white;
   &:hover {
     cursor: pointer;
     transition: 0.2s all ease-in-out;

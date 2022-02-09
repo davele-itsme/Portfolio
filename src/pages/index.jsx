@@ -1,8 +1,8 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import styled from "styled-components";
 import Parallax from "parallax-js";
 import { useRef, useEffect } from "react";
+import ReactFullpage from "@fullpage/react-fullpage";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 
@@ -51,17 +51,31 @@ function IndexPage() {
   return (
     <Layout>
       <Seo title="David Le" />
-      <StyledContent>
-        <div id="main-content">
-          <div className="animated-logo">
-            <StyledH1>DAVID LE</StyledH1>
-            <div className="moving-area">
-              <div className="moving-line" />
+      <ReactFullpage
+        scrollingSpeed={1000} /* Options here */
+        render={({ state, fullpageApi }) => (
+          <ReactFullpage.Wrapper>
+            <StyledContent className="section">
+              <div id="main-content">
+                <div className="animated-logo">
+                  <StyledH1>DAVID LE</StyledH1>
+                  <div className="moving-area">
+                    <div className="moving-line" />
+                  </div>
+                </div>
+                <StyledP>software engineer</StyledP>
+              </div>
+            </StyledContent>
+            <div className="section">
+              <p>Section 2</p>
             </div>
-          </div>
-          <StyledP>software engineer</StyledP>
-        </div>
-      </StyledContent>
+            <div className="section">
+              <p>Section 3</p>
+            </div>
+          </ReactFullpage.Wrapper>
+        )}
+      />
+
       <div id="moon-content" ref={sceneEl}>
         <img
           src="moon-ring.png"
