@@ -6,11 +6,6 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 
-const StyledContent = styled.div`
-  height: 100%;
-  width: 100%;
-`;
-
 const StyledH1 = styled.h1`
   @import "../styles/typography.css";
   font-family: "Futura", sans-serif;
@@ -52,10 +47,9 @@ function IndexPage() {
     <Layout>
       <Seo title="David Le" />
       <ReactFullpage
-        scrollingSpeed={1000} /* Options here */
-        render={({ state, fullpageApi }) => (
+        render={() => (
           <ReactFullpage.Wrapper>
-            <StyledContent className="section">
+            <div data-anchor="main" className="section">
               <div id="main-content">
                 <div className="animated-logo">
                   <StyledH1>DAVID LE</StyledH1>
@@ -65,17 +59,19 @@ function IndexPage() {
                 </div>
                 <StyledP>software engineer</StyledP>
               </div>
-            </StyledContent>
-            <div className="section">
+              <a href="#about" aria-label="Scroll icon" className="scroll-icon">
+                <span />
+              </a>
+            </div>
+            <div data-anchor="about" className="section">
               <p>Section 2</p>
             </div>
-            <div className="section">
+            <div data-anchor="work" className="section">
               <p>Section 3</p>
             </div>
           </ReactFullpage.Wrapper>
         )}
       />
-
       <div id="moon-content" ref={sceneEl}>
         <img
           src="moon-ring.png"
@@ -90,9 +86,6 @@ function IndexPage() {
           PORTFOLIO
         </StyledH2>
       </div>
-      <a href="#placeholder" aria-label="Scroll icon" className="scroll-icon">
-        <span />
-      </a>
     </Layout>
   );
 }

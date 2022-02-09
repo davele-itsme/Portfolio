@@ -7,7 +7,7 @@ import "../styles/layout.css";
 
 const StyledMain = styled.main`
   width: 100%;
-  height: 90vh;
+  height: 100%;
 `;
 
 function Layout({ children }) {

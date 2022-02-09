@@ -6,12 +6,14 @@ import NavMenu from "./NavMenu";
 import NavToggler from "./NavToggler";
 
 const StyledHeader = styled.header`
+  position: fixed;
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 30px;
   height: 10vh;
+  z-index: 1;
 `;
 
 const StyledLogo = styled.span`
