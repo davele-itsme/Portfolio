@@ -43,7 +43,13 @@ function Header({ author }) {
 
   return (
     <StyledHeader>
-      <StyledLogo>{author}</StyledLogo>
+      <div>
+        <StyledLogo>
+          <img height="30px" src="favicon.png" alt="Logo" />
+        </StyledLogo>
+        <StyledLogo>{author}</StyledLogo>
+      </div>
+
       {isNavOpen ? (
         <NavMenu setIsNavOpen={() => setIsNavOpen(!isNavOpen)} />
       ) : null}

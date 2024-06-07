@@ -57,17 +57,22 @@ function IndexPage() {
                     <div className="moving-line" />
                   </div>
                 </div>
-                <StyledP>software engineer</StyledP>
+                <StyledP>product-minded software engineer</StyledP>
               </div>
               <a href="#about" aria-label="Scroll icon" className="scroll-icon">
                 <span />
               </a>
             </div>
             <div data-anchor="about" className="section">
-              <p>Section 2</p>
+              <StyledH2>About me</StyledH2>
+              <StyledP>
+                I am a product-minded engineer with several years in FinTech
+                domain. <br />I am passionate about leveraging technology to
+                create impactful solutions.
+              </StyledP>
             </div>
             <div data-anchor="work" className="section">
-              <p>Section 3</p>
+              <StyledH2>Projects & Skills</StyledH2>
             </div>
           </ReactFullpage.Wrapper>
         )}
