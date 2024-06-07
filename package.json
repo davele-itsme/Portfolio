@@ -33,6 +33,7 @@
     "graphql": "^16.8.1",
     "joi": "^17.5.0",
     "jquery": "^3.6.0",
+    "lodash.template": "^4.5.0",
     "npm-force-resolutions": "^0.0.10",
     "parallax-js": "^3.1.0",
     "prop-types": "^15.7.2",
@@ -43,7 +44,8 @@
     "smooth-scrollbar": "^8.6.1",
     "styled-components": "^6.1.11",
     "typescript": "^5.4.5",
-    "webpack-dev-middleware": "^7.2.1"
+    "webpack-dev-middleware": "^7.2.1",
+    "workbox-build": "^7.1.1"
   },
   "devDependencies": {
     "eslint": "^8.2.0",
