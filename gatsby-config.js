@@ -1,12 +1,9 @@
-const {
-  author,
-  siteDescription,
-  siteIcon,
-  siteTitle,
-  siteUrl,
-} = require(`./config`);
+const { author, siteDescription, siteIcon, siteTitle, siteUrl } = require(
+  `./config`,
+);
 
 module.exports = {
+  pathPrefix: "/david-le-portfolio",
   siteMetadata: {
     author,
     title: siteTitle,
