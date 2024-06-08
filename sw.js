@@ -27,21 +27,21 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-f89d797071bd2a4e828c.js"
+    "url": "webpack-runtime-de7eb238c3c692eeed6d.js"
   },
   {
     "url": "framework-e60bfa027aefe75ca057.js"
   },
   {
-    "url": "app-d5f4434b06bd1a709519.js"
+    "url": "app-28dddc2749fca3b6ff6e.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "68d3c80ddd3eff892318ab76bd227145"
+    "revision": "7686bff4bb5f045d3d9bd6e499e9deb4"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "cba15b42982d77471046eeb5f8855ed0"
+    "revision": "e08b070f2d4434688cbe8156213c0bf2"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -151,7 +151,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/david-le-portfolio/app-d5f4434b06bd1a709519.js`))) {
+  if (!resources || !(await caches.match(`/david-le-portfolio/app-28dddc2749fca3b6ff6e.js`))) {
     return await fetch(event.request)
   }
 
