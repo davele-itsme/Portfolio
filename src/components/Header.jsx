@@ -1,42 +1,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import NavMenu from "./NavMenu";
 import NavToggler from "./NavToggler";
-
-const StyledHeader = styled.header`
-  position: fixed;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 30px;
-  height: 10vh;
-  z-index: 1;
-`;
-
-const StyledLogo = styled.span`
-  @import "../styles/typography.css";
-  font-family: "Futura light", sans-serif;
-  font-size: 1.5em;
-
-  &:hover {
-    cursor: pointer;
-    transition: 0.2s all ease-in-out;
-    color: #4a586b;
-  }
-`;
-
-const StyledA = styled.a`
-  margin-right: 10px;
-  color: white;
-  &:hover {
-    cursor: pointer;
-    transition: 0.2s all ease-in-out;
-    color: #4a586b;
-  }
-`;
+import { StyledA, StyledHeader, StyledLogo } from "./StyledFonts";
 
 function Header({ author }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
