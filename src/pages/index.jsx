@@ -2,6 +2,7 @@ import * as React from "react";
 import Parallax from "parallax-js";
 import { useRef, useEffect } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
+import { ReactTyped } from "react-typed";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import { P, StyledH1, StyledH2, StyledP } from "../components/StyledFonts";
@@ -34,7 +35,19 @@ function IndexPage() {
                     <div className="moving-line" />
                   </div>
                 </div>
-                <StyledP>/ Product-minded Software Engineer</StyledP>
+                <StyledP>
+                  <ReactTyped
+                    strings={[
+                      "/ Product-minded Software Engineer",
+                      "/ FinTech domain expert",
+                      "/ Advocate for continuous learning",
+                      "/ Dreamer",
+                    ]}
+                    typeSpeed={40}
+                    backSpeed={25}
+                    loop
+                  />
+                </StyledP>
                 <img src="profile.png" alt="Profile" id="profile" />
               </div>
             </div>
