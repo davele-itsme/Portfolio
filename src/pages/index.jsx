@@ -53,15 +53,25 @@ function IndexPage() {
             </div>
             <div data-anchor="about" className="section">
               <div className="content">
-                <StyledH2>About me</StyledH2>
+                <StyledH2>My story,</StyledH2>
                 <P>
-                  A product-minded engineer, advocate for continuous learning
-                  and dreamer. Have several years of experience in FinTech
-                  working with Stripe and Adyen. I love exploring new
-                  technologies and working with them. I seek out ways to
-                  contribute to meaningful projects with talented people, and I
-                  derive a lot of pride and satisfaction solving challenging
-                  problems.
+                  Currently, I work at Mews, where I grew up from Junior
+                  Engineer into Senior Backend Engineer within 2,5 years. Here I
+                  focus on crafting thoughtful and inclusive payment experiences
+                  that adhere to web standards for over 5 000 businesses and 2
+                  000 000 guests all around the world.
+                  <br />
+                  <br />
+                  Before now, I was intern Backend Engineer at Kamstrup, where I
+                  worked on a suite of data analytics tools and services
+                  tailored towards customers in Europe.
+                  <br />
+                  <br />
+                  My current goal is to broaden and deepen my technical
+                  expertise, by becoming full-stack engineer, that would enable
+                  me to work on projects with much broader perspective and by
+                  becoming a staff engineer, engaging on complex problems and
+                  having broader impact.
                 </P>
               </div>
             </div>
