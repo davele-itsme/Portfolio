@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import NavMenu from "./NavMenu";
 import NavToggler from "./NavToggler";
 import { StyledA, StyledHeader, StyledLogo } from "./StyledFonts";
@@ -38,6 +38,15 @@ function Header({ author }) {
           aria-label="Linkedin"
         >
           <AiFillLinkedin fontSize="2em" />
+        </StyledA>
+
+        <StyledA
+          href="mailto: ledaodavid@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Mail"
+        >
+          <AiFillMail fontSize="2em" />
         </StyledA>
 
         <NavToggler

@@ -34,7 +34,7 @@ function IndexPage() {
                     <div className="moving-line" />
                   </div>
                 </div>
-                <StyledP>Product-minded Software Engineer</StyledP>
+                <StyledP>/ Product-minded Software Engineer</StyledP>
                 <img src="profile.png" alt="Profile" id="profile" />
               </div>
             </div>
@@ -60,6 +60,10 @@ function IndexPage() {
           </ReactFullpage.Wrapper>
         )}
       />
+      <div id="slider-scroll-down">
+        SCROLL DOWN
+        <span id="bounce-line" />
+      </div>
       <Moon sceneEl={sceneEl} />
     </Layout>
   );

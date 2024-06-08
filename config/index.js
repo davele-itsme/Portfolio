@@ -2,7 +2,7 @@ module.exports = {
   author: "David Le",
   siteDescription: "Vietnamese software engineer based in Europe",
   siteUrl: "https://davidle.gatsbyjs.io/",
-  siteTitle: "DAVID LE PORTFOLIO",
+  siteTitle: "Product-minded Software Engineer",
   siteLanguage: "en_US",
   siteIcon: "static/favicon.png",
   seoTitleSuffix: "Portfolio",
@@ -11,15 +11,15 @@ module.exports = {
 
   navLinks: [
     {
-      name: "About",
+      name: "/ About",
       url: "/about",
     },
     {
-      name: "Work",
+      name: "/ Work",
       url: "/work",
     },
     {
-      name: "Contact",
+      name: "/ Contact",
       url: "/contact",
     },
   ],
