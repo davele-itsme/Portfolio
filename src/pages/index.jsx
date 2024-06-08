@@ -10,7 +10,7 @@ const StyledH1 = styled.h1`
   @import "../styles/typography.css";
   font-family: "Futura", sans-serif;
   font-weight: bold;
-  font-size: 5vw;
+  font-size: 4vw;
   animation: text 3s alternate 1;
   margin-block: 0.2em;
 `;
@@ -19,13 +19,13 @@ const StyledH2 = styled.h2`
   @import "../styles/typography.css";
   font-family: "Futura", sans-serif;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 2.5vw;
 `;
 
 const StyledP = styled.p`
   @import "../styles/typography.css";
   font-family: "Futura light", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1vw;
   margin: 10px;
   animation: text 0.8s both;
 `;
@@ -57,11 +57,9 @@ function IndexPage() {
                     <div className="moving-line" />
                   </div>
                 </div>
-                <StyledP>product-minded software engineer</StyledP>
+                <StyledP>Product-minded Software Engineer</StyledP>
+                <img src="profile.png" alt="Profile" id="profile" />
               </div>
-              <a href="#about" aria-label="Scroll icon" className="scroll-icon">
-                <span />
-              </a>
             </div>
             <div data-anchor="about" className="section">
               <StyledH2>About me</StyledH2>
